@@ -25,7 +25,7 @@ Quick Start
 
 Usage
 -----
-Do GET requests on local server:
+send GET requests to local server:
 
 http://localhost:8000/search.php?service=mass&position[lat]=59.31411099999999&position[lng]=18.05118499999962
 
