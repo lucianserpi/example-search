@@ -1,8 +1,6 @@
 {
     "name": "lucianserpi/example-search",
     "description": "An example project that uses php to search over json data",
-    "type": "project",
-    "license": "MIT",
     "autoload": {
         "psr-4": {
             "lucianserpi\\exampleSearch\\": "src/"
@@ -10,7 +8,7 @@
     },
     "authors": [
         {
-            "name": "lucian serpi"
+            "name": "Lucian Serpi"
         }
     ],
     "minimum-stability": "dev",
