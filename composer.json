@@ -1,0 +1,27 @@
+{
+    "name": "lucianserpi/example-search",
+    "description": "An example project that uses php to search over json data",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "lucianserpi\\exampleSearch\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lucian serpi"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+      "php": "^7.2.5",
+      "josantonius/request": "^2.0",
+      "mjaschen/phpgeo": "dev-master"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
