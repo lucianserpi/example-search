@@ -44,8 +44,8 @@ class SearchService
   ): array {
       return array_filter($services, function($service) use ($serviceName) {
           return strstr(
-            $this->sanitize($service['name']),
-            $this->sanitize($serviceName)
+            $this->sanitizeName($service['name']),
+            $this->sanitizeName($serviceName)
           );
       });
   }
@@ -76,8 +76,8 @@ class SearchService
         ];
       }, $services);
   }
-  
-  public function sanitize(string $serviceName): string
+
+  public function sanitizeName(string $serviceName): string
   {
       $serviceName = strtolower($serviceName);
       $serviceName = trim($serviceName);
