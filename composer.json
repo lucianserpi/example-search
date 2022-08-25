@@ -16,10 +16,5 @@
       "php": "^7.2.5",
       "josantonius/request": "^2.0",
       "mjaschen/phpgeo": "dev-master"
-    },
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
     }
 }
