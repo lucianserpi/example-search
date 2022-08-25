@@ -18,10 +18,8 @@ class SearchService
       $this->calculator = $calculator;
   }
 
-  public function find(
-    string $serviceName,
-    Coordinate $coordinate
-  ): array {
+  public function find(string $serviceName, Coordinate $coordinate): array
+  {
       $jsonData = file_get_contents($this->filePath);
       $services = json_decode($jsonData, true);
 
@@ -38,10 +36,8 @@ class SearchService
       ];
   }
 
-  private function filterByServiceName(
-    array $services,
-    string $serviceName
-  ): array {
+  private function filterByServiceName(array $services, string $serviceName): array
+  {
       return array_filter($services, function($service) use ($serviceName) {
           return strstr(
             $this->sanitizeName($service['name']),
@@ -50,10 +46,8 @@ class SearchService
       });
   }
 
-  private function calculateDistance(
-    array $services,
-    Coordinate $coordinate
-  ): array {
+  private function calculateDistance(array $services, Coordinate $coordinate): array
+  {
       return array_map(function ($service) use ($coordinate) {
         $serviceCoordinate = new Coordinate(
           $service['position']['lat'],
