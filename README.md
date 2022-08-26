@@ -30,3 +30,9 @@ send GET requests to local server:
 http://localhost:8000/search.php?service=mass&position[lat]=59.31411099999999&position[lng]=18.05118499999962
 
 ![Capture](https://user-images.githubusercontent.com/17765841/186732203-a1ee9823-bc75-4c86-9aa3-6de27909ea20.PNG)
+
+what can improve
+----------------
+* create model class for events
+* use generators to parse events
+* filtering, calculate distance, scorring in same iteration
