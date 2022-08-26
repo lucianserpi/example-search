@@ -37,3 +37,4 @@ Improve performance
 * use generators to parse events
 * filtering, calculate distance, scorring in same iteration
 * cache filter results
+* sort, limit, paginate results
