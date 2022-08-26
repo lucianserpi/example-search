@@ -42,7 +42,7 @@ try {
     );
 }
 
-function validate(string $message, array $position): bool
+function validate(?string $message, ?array $position): bool
 {
   return !empty($message) &&
     !empty($position['lng']) &&
