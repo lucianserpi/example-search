@@ -33,8 +33,8 @@ http://localhost:8000/search.php?service=mass&position[lat]=59.31411099999999&po
 
 Improve performance
 --------------------
-* create model class for events
-* use generators to parse events
+* create model class for service
+* use generators to parse services
 * filtering, calculate distance, scorring in same iteration
 * cache filter results
 * sort, limit, paginate results
